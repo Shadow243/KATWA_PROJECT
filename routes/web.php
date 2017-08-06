@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
+Route::get('/', 'HomeController@ShowWelcome')->name('welcome');
+Route::get('/blog', 'HomeController@ShowBlog');
 // Route::group(['prefix' => 'admin'], function(){
 // 	Voyager::routes();
 // });
@@ -23,8 +25,11 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-Route::group(['prefix' => 'inska'], function(){
-	
+Route::group(['as' => 'inska::', 'prefix' => 'inska'], function(){
+	//Home routes
+    Route::get('/blog', ['as'=>'blog', 'uses' => 'HomeController@ShowBlog']);
+
+    //Message Routes
 	Route::group(['prefix' => 'messages'], function () {
     Route::get('/', ['as' => 'messages', 'uses' => 'MessagesController@index']);
     Route::get('create', ['as' => 'messages.create', 'uses' => 'MessagesController@create']);

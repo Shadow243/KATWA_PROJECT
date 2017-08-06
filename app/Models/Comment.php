@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use App\User;
+
 use Illuminate\Database\Eloquent\Model;
-use TCG\Voyager\Models;
+use TCG\Voyager\Models\User;
 
 class Comment extends Model
 {
