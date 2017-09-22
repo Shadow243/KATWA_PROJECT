@@ -4,7 +4,7 @@
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <title>{{ Voyager::setting('title') }} | @yield('title', 'Home')</title>
 
-    <meta name="author" content="themesflat.com">
+    <meta name="author" content="MUHINDO NGESERA Steven">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -12,9 +12,13 @@
     <!-- Bootstrap  -->
     <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/bootstrap.css') }}" >
 
+    <!-- Fonts  -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/font-awesome.css') }}" >
+
     <!-- Theme Style -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/shortcodes.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/short-code.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/languges-style.css') }}">
 
 
     <!-- Responsive -->

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "074a7f0b6b7a75816cb0670a10b403d9",
+    "content-hash": "75182dc9e7a387a8384d26197817ace5",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1267,6 +1267,48 @@
                 "storage"
             ],
             "time": "2017-04-28T10:15:08+00:00"
+        },
+        {
+            "name": "mercuryseries/laravel-helpers",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mercuryseries/laravel-helpers.git",
+                "reference": "4c78d8f3a66127ac333b90440ac9edfe6e4cce61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mercuryseries/laravel-helpers/zipball/4c78d8f3a66127ac333b90440ac9edfe6e4cce61",
+                "reference": "4c78d8f3a66127ac333b90440ac9edfe6e4cce61",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MercurySeries\\Helpers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Honore Hounwanou",
+                    "email": "mercuryseries@gmail.com"
+                }
+            ],
+            "description": "Dynamic Method Helpers",
+            "keywords": [
+                "helpers",
+                "laravel",
+                "methods"
+            ],
+            "time": "2016-12-14T06:17:10+00:00"
         },
         {
             "name": "monolog/monolog",

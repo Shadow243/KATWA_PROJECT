@@ -8,7 +8,7 @@
 @import url("font-awesome.css");
 @import url("flexslider.css");
 @import url("owl.carousel.css");
-@import url("shortcodes.css");
+@import url("short-code.css");
 /*@import url("revolution-slider.css");*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css");
@@ -191,7 +191,7 @@ a {
 
 a:hover,a.active,
 a:focus {
-	color: #ffaa30;
+	color: #23527c;
 	text-decoration: none;
 	outline: 0;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -1328,7 +1328,7 @@ div#header-sticky-wrapper {
 }
 
 #mainnav ul.submenu > li > a:hover {
-	background-color: #ffaa30;
+	background-color: #23527c;
 	color: #fff;
 }
 
@@ -1338,11 +1338,11 @@ div#header-sticky-wrapper {
 
 #mainnav .menu .has-sub:hover:before,
 #mainnav > ul > li > a:hover {
-   color: #ffaa30 ;
+   color: #23527c ;
 }
 
 #mainnav > ul > li > a.active {
-	color: #ffaa30 !important;
+	color: #23527c !important;
 }
 
 /* Mobile navigation
@@ -1645,7 +1645,7 @@ article.post .entry-meta p {
 
 .post .date-post {
 	float: left;
-	border: 2px solid #ffaa30;
+	border: 2px solid #428bdc;
 	padding: 12px 10px 9px;
 	text-align: center;
 }
@@ -1655,7 +1655,7 @@ article.post .entry-meta p {
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	line-height: 22px;
-	color: #ffaa30;
+	color: #2c3a4c;
 	text-transform: uppercase;
 }
 

@@ -9,6 +9,7 @@
     <script type="text/javascript" src="{{ asset('javascript/jquery.cookie.js') }}"></script>
     <script type="text/javascript" src="{{ asset('javascript/jquery-validate.js') }}"></script>
     <script type="text/javascript" src="{{ asset('javascript/main.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('javascript/custom.js') }}"></script>
 
     <!-- Revolution Slider -->
     <script type="text/javascript" src="{{ asset('revolution/js/jquery.themepunch.tools.min.js') }}"></script>

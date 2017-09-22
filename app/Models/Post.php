@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 use TCG\Voyager\Models\Post as BasePost;
-use TCG\Voyager\Models\User;
 
 class Post extends BasePost
 {
@@ -47,4 +47,9 @@ class Post extends BasePost
     {
         return Comments::with('user')->where('post_id', $this->id)->latest()->limit($nbr)->get();
     }
+
+//    public function GetImage()
+//    {
+//        return ($this->image !== null) ? asset('storage/' . $this->image) : asset('uploads/Profiles/avatar.jpg') ;
+//    }
 }

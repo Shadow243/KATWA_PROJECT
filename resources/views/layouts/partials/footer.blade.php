@@ -5,11 +5,11 @@
                     <div class="row">
                         <div class="col-md-3">  
                             <div class="widget widget-text">
-                                <img src="images/blog/Footer-01.jpg" alt="image">
+                                <img src="{{ 'storage/'.Voyager::setting('school_image') }}" alt="image">
                                 <ul>
-                                    <li class="address">68 Tran Hung Dao, Binh Luc, H.Nam</li>
-                                    <li class="phone"><a href="#">+84 962 216 601</a></li>
-                                    <li class="email"><a href="#">contact@company.mail.com</a></li>  
+                                    <li class="address">{{ Voyager::setting('school_location_adress') }}</li>
+                                    <li class="phone"><a href="#">{{ Voyager::setting('school_contact_phone') }}</a></li>
+                                    <li class="email"><a href="#">{{ Voyager::setting('school_contact_email') }}</a></li>
                                 </ul> 
                             </div><!-- /.widget -->      
                         </div>

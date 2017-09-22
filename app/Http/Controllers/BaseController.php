@@ -28,7 +28,7 @@ class BaseController extends Controller
      */
     public function GetAllPost($nbr = 8)
     {
-        return Post::with('user','comments','likes')->paginate($nbr);
+        return Post::with('comments', 'likes','authorId', 'category')->latest()->paginate($nbr);
     }
 
     /**
@@ -38,7 +38,7 @@ class BaseController extends Controller
      */
     public function GetRecentsPosts($nbr = 3)
     {
-        return Post::with('user', 'comments', 'likes')->latest()->paginate($nbr);
+        return Post::with('comments', 'likes','authorId', 'category')->latest()->paginate($nbr);
     }
 
     public function GetOptions()

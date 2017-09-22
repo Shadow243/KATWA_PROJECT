@@ -21,7 +21,7 @@ class HomeController extends BaseController
 //      $settings = BD::select('SELECT * FROM settings');
         $settings =  DB::table('settings')->get();
 //        $posts = Post::with('user','comments','likes')->latest()->paginate(3);
-        $posts = $this->GetAllPost(3);
+        $posts = $this->GetRecentsPosts(3);
         return $this->views->make('welcome', compact('posts','settings'));
     }
 
@@ -40,5 +40,10 @@ class HomeController extends BaseController
                     'categories',
                     'options'
         ));
+    }
+
+    public function About()
+    {
+        return $this->views->make('pages.About.about');
     }
 }

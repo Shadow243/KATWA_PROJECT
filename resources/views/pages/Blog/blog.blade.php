@@ -34,17 +34,19 @@
                                 </h2>
 
                                 <div class="entry-content">
-                                    <p>{!! $postall->body !!}.</p>
+                                    <p>{!! substr($postall->body, 0, 100) !!}.</p>
                                 </div><!-- /entry-post -->
-
+{{--                                    {{ dd($postall->authorId->name) }}--}}
                                 <div class="entry-meta style1">
-                                    <p>Posted at:<span><a href="#"> {{ $postall->created_at->diffForHumans() }}</a></span></p>
+                                    <p>Posted at:<span><a href="#"> {{ $postall->created_at->diffForHumans() }} </a></span></p>
                                     <p>Updated at:<span><a href="#"> {{ $postall->updated_at->diffForHumans() }},</a></span><span><a href="{{ url('/') }}"> {{ Voyager::setting('title') }}</a></span></p>
                                 </div>
                             </div><!-- /content-post -->
                         </article><!-- /post -->
                 @endforeach<!-- /post -->
-
+                        <div class="blog-pagination">
+                            {{ $allPosts->render() }}
+                        </div>
                 </div><!-- /post-wrap -->
 
                 <div class="blog-pagination">
@@ -55,7 +57,7 @@
                         {{--<li class="next">--}}
                             {{--<a href="#">Next</a>--}}
                         {{--</li>--}}
-                        {{ $allPosts->render() }}
+
                     </ul><!-- /.flat-pagination -->
                 </div>
                 {{--{{ $allPosts->render() }}--}}
@@ -71,7 +73,7 @@
                                 <img src="{{ $recentspost->image }}" alt="image" style="width: 120px;">
                             </div>
                             <div class="text">
-                                <a href="#">{!! $recentspost->body !!}</a>
+                                <a href="#">{!! substr($recentspost->body, 0, 40) !!}</a>
                                 <p>{{ $recentspost->created_at->diffForHumans() }}</p>
                             </div>
                         </li>

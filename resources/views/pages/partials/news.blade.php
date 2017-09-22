@@ -27,7 +27,7 @@
                         </h2>
 
                         <div class="entry-content">
-                            <p>{!! $post->body !!}</p>
+                            <p>{!! substr( $post->body, 0, 100) !!}</p>
                         </div>
                         <!-- /entry-post -->
 
